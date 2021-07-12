@@ -5,7 +5,7 @@ body{
     padding: 0;
 }
 /* header aria */
-.header{
+.header ,.footer-section{
     background: #562EFF;
 
 }
@@ -20,6 +20,12 @@ nav.menu-bar {
 }
 .logo {
     padding-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+}
+.logo h3{
+    margin-left: 10px;
 }
 .logo img{
     width: 40.42px;
@@ -58,7 +64,7 @@ nav.menu-bar {
     margin-top: 30px;
     background: #fff;
 }
-.pleyrs-cont h2 ,.blog-container h2 {
+.pleyrs-cont h2 ,.blog-container h2 ,.course-aria h2 {
     margin-top: 0;
     margin-left: 45px;
     color: #562EFF;
@@ -70,8 +76,8 @@ nav.menu-bar {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 28px;
-    border-bottom: 1px solid #D1D1D1;
-    margin: 0 10px;
+    border-bottom: 2px solid #D1D1D1;
+    margin: 0 15px;
 }
 .pleyr-item , .blog-item{
     display: flex;
@@ -142,18 +148,23 @@ font-size: 13px;
 }
 
 /* course aria */
+.course-aria {
+    margin-bottom: 30px;
+}
 .course-list {
     display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
+    padding: 20px 10px;
 }
 .cours-item {
-  
+    padding-left: 10px;
+    padding-bottom: 20px;
+    box-shadow: rgb(243 235 235) 1px 1px 20px 0px;
+    border-radius: 30px !important;
 }
-.image{
-    /* text-align: center; */
-}
+
 .cours-item .image img{
     width: 224px;
 }
@@ -163,6 +174,7 @@ font-size: 13px;
     color: #1E1E1E;
     font-weight: 500;
     margin-bottom: 5px;
+    margin-left: 0 !important;
 }
 .cours-text p {
     color: #ED6B4F;
@@ -181,4 +193,31 @@ font-size: 13px;
 
 .course-info ul li {
     display: inline-block;
+}
+
+span.star {
+    margin-right: 10px;
+}
+span.star ul li {
+    color: gold;
+    margin-right: 2px;
+}
+span.star ul li:nth-child(5){
+    color: #9F9F9F;
+    opacity: .4;
+}
+span.clock {
+    margin-left: 20px;
+    color: #ED6B4F;
+    border: 1px solid #ED6B4F;
+    padding: 0 3px;
+    border-radius: 25px;
+    background: #fee5df;
+}
+/* footer */
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
 }
